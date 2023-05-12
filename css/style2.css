@@ -1,4 +1,15 @@
-body{
+/*header*/
+.inicio-resto{
+    text-align: right;
+}
+.inicio-a{
+    margin: 0% 3%;
+    position: relative;
+    top: 15px;
+}
+
+/*index*/
+#body-index{
     background-color: rgb(235, 172, 89);
     display: grid;
     grid-template-areas:
@@ -9,35 +20,20 @@ body{
     grid-template-rows: 50px 650px 500px 50px;
     grid-template-columns: 50% 50%;
 }
+
 header{
     grid-area: header;
     background-color: #ADD8E6;
     border-radius: 10px;
 }
+
 footer{
     grid-area: footer;
     background-color: lightseagreen;
 }
+
 section#seccion1{
     grid-area: seccion1;
-}
-section#seccion2{
-    grid-area: seccion2;
-}
-section#seccion3{
-    grid-area: seccion3;
-}
-
-.inicio-resto{
-    text-align: right;
-}
-.inicio-a{
-    margin: 0% 3%;
-    position: relative;
-    top: 15px;
-}
-
-.sobre-cubos{
     color: blue;
     margin: 5% 17%;
     background-color: rgb(0, 201, 201);
@@ -61,12 +57,13 @@ section#seccion3{
 .info{
     text-align: start;
     overflow: hidden;
-    height: 34%;
+    height: 55%;
     overflow: hidden;
     margin: 5%;
 }
 
-.seccion2{
+section#seccion2{
+    grid-area: seccion2;
     color: blue;
     margin: 5% 17%;
     background-color: rgb(0, 201, 201);
@@ -95,7 +92,8 @@ section#seccion3{
     margin: 4%;
 }
 
-#seccion3{
+section#seccion3{
+    grid-area: seccion3;
     background-color: rgb(1, 146, 146);
     border-radius: 20px;
     width: 78%;
@@ -123,9 +121,77 @@ section#seccion3{
     text-align: center;
 }
 
+/*tutoriales*/
+#body-tutoriales{
+    background-color: rgb(235, 172, 89);
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "tuto1 tuto2 tuto3"
+    "tuto4 tuto5 tuto6"
+    "comentario comentario comentario"
+    "footer footer footer";
+    grid-template-rows: 50px 100px 250px 250px 100px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section#titulo{
+    grid-area: titulo;
+    background-color: #3085c2;
+    display: flex;
+    justify-content: center;
+    margin: 1.5% 32%;
+    border-radius: 10px;
+}
+section#tuto1{
+    grid-area: tuto1;
+    display: flex;
+    flex-direction: column;
+}
+section#tuto2{
+    grid-area: tuto2;
+    display: flex;
+    flex-direction: column;
+}
+section#tuto3{
+    grid-area: tuto3;
+    display: flex;
+    flex-direction: column;
+}
+section#tuto4{
+    grid-area: tuto4;
+    display: flex;
+    flex-direction: column;
+}
+section#tuto5{
+    grid-area: tuto5;
+    display: flex;
+    flex-direction: column;
+}
+section#tuto6{
+    grid-area: tuto6;
+    display: flex;
+    flex-direction: column;
+}
+section#comentario{
+    grid-area: comentario;
+    background-color: #4bacd1;
+    display: flex;
+    justify-content: center;
+    margin: 1.5% 23%;
+    border-radius: 10px;
+}
+
+.centrar-texto{
+    text-align: center;
+    margin: 2% 0%;
+}
+.videos{
+    margin: 0% 15%;
+}
 
 @media (max-width:576px){
-    body{
+    #body-index{
         display: grid;
         grid-template-areas:
         "header"
@@ -136,6 +202,8 @@ section#seccion3{
         grid-template-rows: 50px 650px 650px 1100px 50px;
         grid-template-columns: 100%;
     }
+
+    /*seccion1*/
     .imagen-cubo{
         width: 80%;
     }
@@ -144,6 +212,8 @@ section#seccion3{
         height: 31%;
         overflow: hidden;
     }
+
+    /*seccion3*/
     .imagenes{
         width: 90px;
         height: 90px;

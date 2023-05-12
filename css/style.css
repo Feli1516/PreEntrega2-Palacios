@@ -1,8 +1,5 @@
 body{
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-acuarela_87374-69.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1300px;
+    background-color: rgb(235, 172, 89);
 }
 
 /*header*/
@@ -130,7 +127,7 @@ body{
 /*info*/
 
 .h1-info{
-    background-color: 3085c2;
+    background-color: #3085c2;
     display: flex;
     justify-content: center;
     margin: 40px 400px;
@@ -143,7 +140,7 @@ body{
     text-align: center;
 }
 .sub-h2{
-    background-color: 4bacd1;
+    background-color: #4bacd1;
     width: 150px;
     height: 30px;
     border-radius: 10px;
