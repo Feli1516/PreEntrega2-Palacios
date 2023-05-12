@@ -49,13 +49,14 @@ section#seccion3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+.cubo-posicion{
+    display: flex;
+    justify-content: center;
+}
 .imagen-cubo{
-    border-radius: 60px;
+    border-radius: 15%;
     width: 65%;
     height: 50%;
-    position: relative;
-    top: -2%;
-    left: 18%;
 }
 .info{
     text-align: start;
@@ -134,6 +135,9 @@ section#seccion3{
         "footer";
         grid-template-rows: 50px 650px 650px 1100px 50px;
         grid-template-columns: 100%;
+    }
+    .imagen-cubo{
+        width: 80%;
     }
     .info{
         overflow: hidden;
