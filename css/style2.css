@@ -1,7 +1,5 @@
 body{
     background-color: rgb(235, 172, 89);
-}
-#grilla{
     display: grid;
     grid-template-areas:
     "header header"
@@ -45,12 +43,11 @@ section#seccion3{
     background-color: rgb(0, 201, 201);
     height: 90%;
     width: 68%;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 .titulo{
-    display: flex;
-    justify-content: center;
-    height: 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 .imagen-cubo{
     border-radius: 60px;
@@ -61,10 +58,9 @@ section#seccion3{
     left: 18%;
 }
 .info{
-    display: flex;
-    justify-content: center;
+    text-align: start;
     overflow: hidden;
-    height: 37%;
+    height: 34%;
     overflow: hidden;
     margin: 5%;
 }
@@ -75,26 +71,21 @@ section#seccion3{
     background-color: rgb(0, 201, 201);
     height: 90%;
     width: 68%;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 .records{
-    position: relative;
-    left: 10%;
-    overflow: hidden;
-    width: 90%;
-    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 .record1{
-    position: relative;
-    left: 38%;
+    text-align: center;
 }
 .record2{
-    position: relative;
-    left: 30%;
+    text-align: center;
 }
 .video{
-    position: relative;
-    left: 15%;
+    display: flex;
+    justify-content: center;
 }
 .seccion2 h3{
     margin: 2%;
@@ -105,7 +96,7 @@ section#seccion3{
 
 #seccion3{
     background-color: rgb(1, 146, 146);
-    border-radius: 10%;
+    border-radius: 20px;
     width: 78%;
     height: 95%;
     color: black;
@@ -128,6 +119,33 @@ section#seccion3{
     border-radius: 20%;
 }
 #seccion3 h3{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+
+@media (max-width:576px){
+    body{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "seccion1"
+        "seccion2"
+        "seccion3"
+        "footer";
+        grid-template-rows: 50px 650px 650px 1100px 50px;
+        grid-template-columns: 100%;
+    }
+    .info{
+        overflow: hidden;
+        height: 31%;
+        overflow: hidden;
+    }
+    .imagenes{
+        width: 90px;
+        height: 90px;
+    }
+    .listas{
+        width: 80%;
+        margin: 3% 33%;
+    }
 }
