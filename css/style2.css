@@ -10,7 +10,7 @@
 
 /*index*/
 #body-index{
-    background-color: rgb(235, 172, 89);
+    background-color: #01172F;
     display: grid;
     grid-template-areas:
     "header header"
@@ -23,20 +23,33 @@
 
 header{
     grid-area: header;
-    background-color: #ADD8E6;
-    border-radius: 10px;
 }
 
 footer{
     grid-area: footer;
-    background-color: lightseagreen;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    list-style-type: none;
+}
+.facebook{
+    width: 35%;
+}
+.instagram{
+    margin-left: 31%;
 }
 
 section#seccion1{
     grid-area: seccion1;
-    color: blue;
+    background-color: black;
+    color: beige;
     margin: 5% 17%;
-    background-color: rgb(0, 201, 201);
     height: 90%;
     width: 68%;
     border-radius: 20px;
@@ -57,13 +70,16 @@ section#seccion1{
 .info{
     text-align: start;
     margin: 5%;
+    overflow: hidden;
+    height: 50%;
+    overflow: hidden;
 }
 
 section#seccion2{
     grid-area: seccion2;
-    color: blue;
+    background-color: black;
+    color: beige;
     margin: 5% 17%;
-    background-color: rgb(0, 201, 201);
     height: 90%;
     width: 68%;
     border-radius: 20px;
@@ -91,11 +107,11 @@ section#seccion2{
 
 section#seccion3{
     grid-area: seccion3;
-    background-color: rgb(1, 146, 146);
+    background-color: black;
+    color: beige;
     border-radius: 20px;
     width: 78%;
     height: 95%;
-    color: black;
     margin: 0% 11%;
 }
 .ol{
@@ -120,7 +136,7 @@ section#seccion3{
 
 /*tutoriales*/
 #body-tutoriales{
-    background-color: rgb(235, 172, 89);
+    background-color: #01172F;
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -134,10 +150,9 @@ section#seccion3{
 }
 section#titulo{
     grid-area: titulo;
-    background-color: #3085c2;
-    display: flex;
-    justify-content: center;
-    margin: 1.5% 32%;
+    background-color: black;
+    color: beige;
+    margin: 1% 20%;
     border-radius: 10px;
 }
 section#tuto1{
@@ -172,14 +187,14 @@ section#tuto6{
 }
 section#comentario{
     grid-area: comentario;
-    background-color: #4bacd1;
-    display: flex;
-    justify-content: center;
-    margin: 1.5% 23%;
+    background-color: black;
+    color: beige;
+    margin: 1.5% 10%;
     border-radius: 10px;
 }
 
 .centrar-texto{
+    color: beige;
     text-align: center;
     margin: 2% 0%;
 }
@@ -202,7 +217,7 @@ section#comentario{
     }
     .info{
         overflow: hidden;
-        height: 55%;
+        height: 50%;
         overflow: hidden;
     }
     .imagen-cubo{
@@ -235,9 +250,9 @@ section#comentario{
         grid-template-columns: 100%;
     }
     section#titulo{
-        margin: 1.5% 20%;
+        margin: 2% 10%;
     }
     section#comentario{
-        margin: 1.5% 15%;
+        margin: 1.5% 0%;
     }
 }
