@@ -17,7 +17,7 @@
     "seccion1 seccion2"
     "seccion3 seccion3"
     "footer footer";
-    grid-template-rows: 50px 650px 500px 50px;
+    grid-template-rows: 50px 700px 500px 50px;
     grid-template-columns: 50% 50%;
 }
 
@@ -56,9 +56,6 @@ section#seccion1{
 }
 .info{
     text-align: start;
-    overflow: hidden;
-    height: 55%;
-    overflow: hidden;
     margin: 5%;
 }
 
@@ -191,6 +188,7 @@ section#comentario{
 }
 
 @media (max-width:576px){
+    /*index*/
     #body-index{
         display: grid;
         grid-template-areas:
@@ -199,21 +197,17 @@ section#comentario{
         "seccion2"
         "seccion3"
         "footer";
-        grid-template-rows: 50px 650px 650px 1100px 50px;
+        grid-template-rows: 50px 700px 700px 1100px 50px;
         grid-template-columns: 100%;
-    }
-
-    /*seccion1*/
-    .imagen-cubo{
-        width: 80%;
     }
     .info{
         overflow: hidden;
-        height: 31%;
+        height: 55%;
         overflow: hidden;
     }
-
-    /*seccion3*/
+    .imagen-cubo{
+        width: 80%;
+    }
     .imagenes{
         width: 90px;
         height: 90px;
@@ -221,5 +215,29 @@ section#comentario{
     .listas{
         width: 80%;
         margin: 3% 33%;
+    }
+
+    /*tutoriales*/
+    #body-tutoriales{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "tuto1"
+        "tuto2"
+        "tuto3"
+        "tuto4"
+        "tuto5"
+        "tuto6"
+        "comentario"
+        "footer";
+        grid-template-rows: 50px 100px 400px 400px 400px 400px 400px 400px 100px 50px;
+        grid-template-columns: 100%;
+    }
+    section#titulo{
+        margin: 1.5% 20%;
+    }
+    section#comentario{
+        margin: 1.5% 15%;
     }
 }
