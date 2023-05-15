@@ -162,6 +162,10 @@ p,h1,h2,h3,h4,li{
 
 @media (max-width:576px){
     /*info*/
+    .sub-h2{
+        margin: 7% 27%;
+        width: 45%;
+    }
     .sub-div{
         display: flex;
         flex-direction: column;
