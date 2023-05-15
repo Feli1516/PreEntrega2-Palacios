@@ -26,25 +26,26 @@ footer ul{
 /*info*/
 .h1-info{
     background-color: black;
-    display: flex;
-    justify-content: center;
-    margin: 40px 400px;
+    margin: 4% 25%;
     border-radius: 10px;
+    text-align: center;
 }
 .p-titulo{
     position: relative;
-    left: 350px;
-    width: 600px;
+    left: 25%;
+    width: 50%;
     text-align: center;
 }
 .sub-h2{
     background-color: black;
-    width: 170px;
-    height: 40px;
+    width: 25%;
+    height: 6%;
     border-radius: 10px;
+    margin: 5% 0%;
+    text-align: center;
 }
 .sub-p{
-    width: 400px;
+    width: 30%;
 }
 .sub-div{
     display: flex;
@@ -53,50 +54,50 @@ footer ul{
 }
 .sub-img{
     position: relative;
-    left: 200px;
+    left: 14%;
     border-radius: 10px;
+    margin: 2% 0%;
 }
 
 /*tipos-cubos*/
 .tcubos{
     background-color: black;
-    display: flex;
-    justify-content: center;
-    margin: 50px 400px;
+    margin: 4% 30%;
     border-radius: 10px;
+    text-align: center;
 }
 .varcubos{
     background-color: black;
-    display: flex;
-    justify-content: center;
-    margin: 20px 300px;
+    text-align: center;
+    margin: 4% 25%;
     border-radius: 10px;
 }
 #gruposcubos{
     background-color: black;
-    width: 150px;
-    height: 250px;
-    margin: 20px 0px;
+    width: 20%;
+    height: 37%;
+    margin: 3% 0%;
     border-radius: 10px;
 }
 .todos-los-cubos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px 50px;
-    width: 900px;
+    margin: 5% 5%;
+    width: 100%;
 }
 .todos-los-cubos img{
     position: relative;
-    left: 100px;
-    margin: 0px 50px;
+    left: 20%;
     border-radius: 10px;
 }
 .info-tcubos{
     background-color: black;
     border-radius: 10px;
-    width: 400px;
-    height: 260px;
+    width: 35%;
+    overflow: hidden;
+    height: 290px;
+    overflow: hidden;
 }
 
 /*metodo-fridrich*/
@@ -157,4 +158,53 @@ footer ul{
 }
 p,h1,h2,h3,h4,li{
     color: beige;
+}
+
+@media (max-width:576px){
+    /*info*/
+    .sub-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-p{
+        width: 90%;
+    }
+    .p-titulo{
+        width: 80%;
+        left: 10%;
+    }
+    .sub-img{
+        position: relative;
+        left: 10%;
+        margin: 10% 0%;
+        width: 80%;
+    }
+    /*tipos de cubos*/
+    .tcubos{
+        margin: 4% 5%;
+    }
+    .varcubos{
+        margin: 4% 10%;
+    }
+    #gruposcubos{
+        width: 50%;
+    }
+    .todos-los-cubos{
+        display: flex;
+        flex-direction: column;
+        margin: 5% 5%;
+    }
+    .todos-los-cubos img{
+        position: relative;
+        left: 22%;
+        width: 50%;
+        margin: 5% 0%;
+    }
+    .info-tcubos{
+        width: 90%;
+    }
+    .subtitulos-tcubos{
+        text-align: center;
+        margin: 4% 0%;
+    }
 }
